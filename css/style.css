@@ -61,6 +61,8 @@ nav ul li a i:hover { color: rgb(255, 38, 150); }
     gap: 5px;
 }
 
+.form img { margin: 6px 0; }
+
 .form p { font-weight: bold; }
 
 form input, button { padding: 2px }
@@ -106,9 +108,15 @@ button:hover { font-weight: bold; color: rgb(255, 38, 150); }
 
 .rotate { transform: rotate(180deg); transition: 300ms; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 760px) {
 
     header { flex-direction: column; }
+
+    .form form, .form button { margin-top: 15px; }
+
+}
+
+@media only screen and (max-width: 570px) {
 
     nav ul li a { font-size: 20px; }
 
@@ -121,8 +129,6 @@ button:hover { font-weight: bold; color: rgb(255, 38, 150); }
     #about { width: 90%; }
 
     #about ul { font-size: 20px; }
-
-    .form form, .form button { margin-top: 15px; }
 
     form, form input { width: 90%; margin: 0 auto; }
 
