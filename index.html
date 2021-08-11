@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <title>Erica Noronha</title>
+</head>
+<body>
+    <header>
+        <h1>Erica Noronha</h1>
+        <nav>
+            <ul>
+                <li><a href="https://github.com/ericanoronha" title="github" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ericanoronha/" title="linked in" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h2>Erica Noronha</h2>
+                <p>front-end developer</p>
+            </div>
+            <div id="arrow" onclick="displayAbout()">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div id="about">
+                <p>I'm Erica Noronha, a Brazilian front-end developer based in Rio de Janeiro. Currently on my last year of college, where I go to for Information Systems. You can read more about my final project <a href="#">here</a>. I'm keen on supporting diversity initiatives and attending to events that help to create a more inclusive community.</p>
+                <p>For the last 4 years I have been working and getting experienced in few technologies like these and more, yet I'm always open to learn new stuff.</p>
+                <ul>
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-bootstrap"></i></li>
+                    <li><i class="fab fa-angular"></i></li>
+                    <li><i class="fab fa-wordpress"></i></li>
+                    <li><i class="fab fa-php"></i></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="form">
+                <p>contact me</p> <img src="./computer.gif" alt="">
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="your e-mail">
+                    <button type="submit" onclick="alertaEmail()">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation')
+            var about = document.getElementById('about')
+            arrow.classList.toggle('rotate')
+            about.classList.toggle('active')
+        }
+
+        function alertaEmail(){
+            alert('Desculpe, esse formulário é apenas ilustrativo heheh')
+        }
+    </script>
+</body>
+</html>

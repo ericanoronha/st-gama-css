@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(58, 58, 58);
+  text-align: center;
+  transition: 300ms ease color;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+body { background: url("../bg.png") repeat center center fixed; }
+
+ul { list-style: none; display: flex; flex-direction: row; }
+
+a { text-decoration: none; }
+
+header {
+    margin: 50px auto 20px auto;
+    padding: 25px 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+header, section, footer {
+    -webkit-box-shadow: 10px 10px 0px -6px rgb(0 0 0 / 29%);
+    -moz-box-shadow: 10px 10px 0px -6px rgba(0,0,0,0.29);
+    box-shadow: 10px 10px 0px -6px rgb(0 0 0 / 29%);
+}
+
+.container {
+    margin: 0px auto 50px auto;
+    padding: 25px 50px;
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 15px;
+    background: white;
+    border-radius: 0;
+    border: 0.13rem dashed rgba(0,0,0,.5);
+    box-shadow: 0 0 0 5px rgb(255 255 255), 15px 15px 0px -6px rgb(0 0 0 / 29%);
+}
+
+nav ul li + li { margin-left: 20px; }
+
+nav ul li a i:hover { color: rgb(255, 38, 150); }
+
+#about a { border-bottom: 1px dashed rgba(33, 69, 123, 0.783); }
+
+#about ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    gap: 5px;
+}
+
+.form p { font-weight: bold; }
+
+form input, button { padding: 2px }
+
+button { cursor: pointer }
+
+button:hover { font-weight: bold; color: rgb(255, 38, 150); }
+
+/*
+.form button {
+    background: linear-gradient(to right, violet 50%, purple 50%);
+    background-size:  200% 100%;
+    background-position: right bottom;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    margin-left: -4px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+}
+*/
+
+#arrow {
+    margin-top: -10px;
+    font-size: 40px;
+    cursor: pointer;
+    animation: blink 500ms steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to { visibility: hidden; }
+}
+
+.active { display: block !important; }
+
+#about { display: none; }
+
+#animation { transition: 300ms; }
+
+.rotate { transform: rotate(180deg); transition: 300ms; }
+
+@media only screen and (max-width: 480px) {
+
+    header { flex-direction: column; }
+
+    nav ul li a { font-size: 20px; }
+
+    h2 { font-size: 20px; }
+
+    p { font-size: 14px; }
+
+    .container { padding: 25px 20px; overflow: hidden; }
+
+    #about { width: 90%; }
+
+    #about ul { font-size: 20px; }
+
+    .form form, .form button { margin-top: 15px; }
+
+    form, form input { width: 90%; margin: 0 auto; }
+
+}
